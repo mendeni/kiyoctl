@@ -1,0 +1,14 @@
+[package]
+name = "kiyoctl"
+version = "0.1.0"
+edition = "2021"
+description = "Razer Kiyo Pro control panel for macOS (UVC + Razer extension unit)"
+
+[dependencies]
+rusb = "0.9"
+eframe = "0.31"
+anyhow = "1"
+nokhwa = { version = "0.10", features = ["input-avfoundation"] }
+
+[profile.release]
+strip = true
